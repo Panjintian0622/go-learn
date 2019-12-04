@@ -15,7 +15,7 @@ pipeline:
     commands:
       - 'docker login --username=潘金天1992 --password=xinyoulingxiyidiantong. registry.cn-beijing.aliyuncs.com'
       - 'docker build --rm  -t go-learn .'
-      - 'docker tag demo registry.cn-beijing.aliyuncs.com/frode/go:master'
+      - 'docker tag go-learn registry.cn-beijing.aliyuncs.com/frode/go:master'
       - 'docker push registry.cn-beijing.aliyuncs.com/frode/go:master'
     when:
       branch: master
